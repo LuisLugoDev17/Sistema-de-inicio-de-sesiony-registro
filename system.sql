@@ -37,16 +37,13 @@ CREATE TABLE IF NOT EXISTS `user` (
   `password` varchar(32) DEFAULT NULL,
   `registration_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=innoDB;
 
 --
 -- Volcado de datos para la tabla `user`
 --
 
 INSERT INTO `user` (`id`, `id_card`, `name`, `last_name`, `username`, `password`, `registration_date`) VALUES
-(5, 12345678, 'Luis Daniel', 'Lugo', 'luisdaniel17', 'fa585d89c851dd338a70dcf535aa2a92', '2023-11-04 17:53:53'),
-(6, 1234567, 'Luis Daniel', 'Lugo', 'luisdaniel17', 'fa585d89c851dd338a70dcf535aa2a92', '2023-11-04 18:18:50'),
-(7, 123456, 'luis', 'lugo', 'luis17', '3c9909afec25354d551dae21590bb26e', '2023-11-04 19:22:52'),
 (8, 123456789, 'luis', 'lugo', '123', '123', '2023-11-04 19:34:17');
 COMMIT;
 
